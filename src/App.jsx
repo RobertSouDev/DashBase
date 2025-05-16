@@ -1,11 +1,17 @@
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Layout from "./pages/Layout";
+import NoPage from "./pages/NoPage";
+
 export default function App() {
 
   return (
-    <>
-      <h1 class="text-3xl font-bold underline text-red-500">
-        Hello world!
-      </h1>
-    </>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+            <Route path="*" element={<NoPage/>}/>
+          </Route>
+        </Routes>
+      </Router>
   )
 }
 

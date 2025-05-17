@@ -10,17 +10,21 @@ export default function Navbar() {
             </div>
             <div className=" w-[50%]  flex items-center p-4  ">
                 <ul className="w-full   font-serif text-2xl flex justify-around  ">
-                    <li className="hover:border-b hover:text-red-600">
-                        <Link to="/home">Home</Link>
+                    <li className="relative inline-block group hover:text-red-700">
+                        <Link to="/">Home</Link>
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-hover:w-full"></span>
                     </li>
-                    <li className="hover:border-b hover:text-red-600">
+                    <li className="relative inline-block group hover:text-red-700">
                         <Link to="/blogs">Sobre</Link>
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-hover:w-full"></span>
                     </li>
-                    <li className="hover:border-b hover:text-red-600">
+                    <li className="relative inline-block group hover:text-red-700">
                         <Link to="/contact">Noticias</Link>
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all duration-500 group-hover:w-full"></span>
                     </li>
-                    <li className="hover:border-b hover:text-red-600">
+                    <li className="relative inline-block group hover:text-red-700">
                         <Link to="/contact">Contato</Link>
+                        <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-red-600 transition-all  duration-500 group-hover:w-full"></span>
                     </li>
                 </ul>
             </div>

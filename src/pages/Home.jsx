@@ -21,6 +21,10 @@ export default function Home() {
                         <p className="text-5xl font-normal ">
                             Sou um título. Clique aqui para editar e adicionar o seu próprio texto. É fácil! Basta clicar em "Editar Texto" ou clicar duas vezes sobre mim e você poderá adicionar o seu próprio conteúdo.
                         </p>
+                        <a href="#" class="relative inline-block group">
+                            <span class="text-black">Link Animado</span>
+                            <span class="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+                        </a>
                     </div>
             </div>
 
